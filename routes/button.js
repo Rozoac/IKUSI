@@ -9,7 +9,7 @@ var app = express();
 // BORRAR UN BOTON
 // =============================
 
-app.delete("/usuario/:id", (req, res) => {
+app.delete("/button/:id", (req, res) => {
   var id = req.params.id;
 
   Button.findByIdAndRemove(id, (err, botonBorrado) => {
